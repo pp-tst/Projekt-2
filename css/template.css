@@ -632,6 +632,9 @@ input[type='search'] {
 ::-webkit-input-placeholder {
   color: #969895; }
 
+::-moz-placeholder {
+  color: #969895; }
+
 :-ms-input-placeholder {
   color: #969895; }
 
@@ -803,6 +806,8 @@ select {
   border-color: #cc4b37;
   background-color: #faedeb; }
   .is-invalid-input:not(:focus)::-webkit-input-placeholder {
+    color: #cc4b37; }
+  .is-invalid-input:not(:focus)::-moz-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
     color: #cc4b37; }
