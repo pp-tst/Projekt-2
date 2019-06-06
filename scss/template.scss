@@ -42,10 +42,13 @@
 
 .menu-button {
   cursor: pointer;
-  background: $blue;
+  background: $dark-blue;
   height: $grid-column-gutter*1.5;
   margin-right: $grid-column-gutter / 4;
   width: $grid-column-gutter*1.5;
+  position: absolute;
+  top: 0;
+  right: 0;
 
   &.active {
     .menu-button-inner {
@@ -87,7 +90,7 @@
   &,
   &::after,
   &::before {
-    background-color: $dark-blue;
+    background-color: $white;
     border-radius: rem-calc(2);
     height: rem-calc(5);
     position: absolute;
@@ -117,8 +120,38 @@
 }
 
 .menu-button-label {
-  color: $dark-blue;
+  color: $white;
   display: block;
   margin-top: -$grid-column-gutter / 3.75;
 }
+//Header
+.header{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Logo
+.logo{
+  order: 3;
+  padding-top: $grid-column-gutter;
+}
+
 // Hauptnavigation
+.main-nav{
+  order: 2;
+}
+
+//Languagenavigation
+.lang-nav{
+  order: 1;
+}
+#lang-menu{
+  list-style-type: none;
+  li{
+    display: inline;
+    a{
+      text-decoration: none;
+      color: $green;
+    }
+  }
+}

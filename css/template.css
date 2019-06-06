@@ -362,11 +362,11 @@ h6, .h6 {
 
 a {
   line-height: inherit;
-  color: #033F67;
+  color: #27357C;
   text-decoration: underline;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #033659;
+    color: #222e6b;
     text-decoration: none; }
   a img {
     border: 0; }
@@ -981,10 +981,13 @@ select {
 
 .menu-button {
   cursor: pointer;
-  background: #B0D2DF;
+  background: #27357C;
   height: 5rem;
   margin-right: 0.83333rem;
-  width: 5rem; }
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0; }
   .menu-button.active .menu-button-inner {
     -webkit-transform: rotate(225deg);
         -ms-transform: rotate(225deg);
@@ -1028,7 +1031,7 @@ select {
   -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
           transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .menu-button-inner, .menu-button-inner::after, .menu-button-inner::before {
-    background-color: #033F67;
+    background-color: #ffffff;
     border-radius: 0.11111rem;
     height: 0.27778rem;
     position: absolute;
@@ -1058,6 +1061,37 @@ select {
     transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .menu-button-label {
-  color: #033F67;
+  color: #ffffff;
   display: block;
   margin-top: -0.88889rem; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.logo {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  padding-top: 3.33333rem; }
+
+.main-nav {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.lang-nav {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+#lang-menu {
+  list-style-type: none; }
+  #lang-menu li {
+    display: inline; }
+    #lang-menu li a {
+      text-decoration: none;
+      color: #3FA535; }
