@@ -1065,6 +1065,10 @@ select {
   display: block;
   margin-top: -0.88889rem; }
 
+@media print, screen and (min-width: 48em) {
+  .menu-button {
+    display: none; } }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1081,7 +1085,22 @@ select {
 .main-nav {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
-          order: 2; }
+          order: 2;
+  width: 100%; }
+
+#main-menu {
+  list-style-type: none;
+  margin: 0; }
+  #main-menu a {
+    text-decoration: none;
+    background: #27357C;
+    color: #ffffff;
+    display: block;
+    padding: 0.41667rem; }
+
+@media print, screen and (min-width: 48em) {
+  #main-menu {
+    display: block; } }
 
 .lang-nav {
   -webkit-box-ordinal-group: 2;

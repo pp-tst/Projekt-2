@@ -35,8 +35,6 @@
   padding: $grid-column-gutter / 4;
 }
 // Farben
-
-
 // Menu
 // Menu Button
 
@@ -124,32 +122,60 @@
   display: block;
   margin-top: -$grid-column-gutter / 3.75;
 }
+@include breakpoint (large) {
+  .menu-button {
+    display: none;
+  }
+}
 //Header
-.header{
+
+.header {
   display: flex;
   flex-wrap: wrap;
 }
-
 //Logo
-.logo{
+
+.logo {
   order: 3;
   padding-top: $grid-column-gutter;
 }
-
 // Hauptnavigation
-.main-nav{
+
+.main-nav {
   order: 2;
+  width: 100%;
 }
 
+#main-menu {
+  list-style-type: none;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    background: $dark-blue;
+    color: $white;
+    display: block;
+    padding: $grid-column-gutter/8;
+  }
+}
+@include breakpoint (large) {
+  #main-menu {
+    display: block;
+  }
+}
 //Languagenavigation
-.lang-nav{
+
+.lang-nav {
   order: 1;
 }
-#lang-menu{
+
+#lang-menu {
   list-style-type: none;
-  li{
+
+  li {
     display: inline;
-    a{
+
+    a {
       text-decoration: none;
       color: $green;
     }
