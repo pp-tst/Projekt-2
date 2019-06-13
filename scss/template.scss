@@ -137,7 +137,7 @@
 
 .logo {
   order: 3;
-  padding-top: $grid-column-gutter;
+  padding-top: $grid-column-gutter/2;
 }
 // Hauptnavigation
 
@@ -160,7 +160,7 @@
 }
 @include breakpoint (large) {
   #main-menu {
-    display: block;
+    display: inline-block;
   }
 }
 //Languagenavigation
@@ -171,6 +171,7 @@
 
 #lang-menu {
   list-style-type: none;
+  margin: 0;
 
   li {
     display: inline;
@@ -178,6 +179,63 @@
     a {
       text-decoration: none;
       color: $green;
+    }
+  }
+}
+//section
+
+.section {
+  padding: 0 $grid-column-gutter/2;
+}
+//hero
+
+.hero {
+  position: relative;
+
+  h1 {
+    position: absolute;
+    bottom: 0;
+    color: $white;
+    padding: 0 $grid-column-gutter/2;
+    margin: 0;
+
+    .large {
+      font-size: rem-calc(40);
+    }
+  }
+}
+//main
+
+.main {
+  h2 {
+    margin: $grid-column-gutter/2 0 $grid-column-gutter/8;
+    text-transform: uppercase;
+  }
+
+  span {
+    margin-bottom: $grid-column-gutter/2;
+    display: block;
+  }
+
+  .has-2-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+
+    .text-box {
+      background: $light-blue;
+      text-align: center;
+      padding: $grid-column-gutter/4 $grid-column-gutter/2 $grid-column-gutter/2;
+      margin-bottom: 10px;
+
+      h3 {
+        color: $white;
+        margin-bottom: $grid-column-gutter/2;
+      }
+
+      p {
+        color: $dark-blue;
+      }
     }
   }
 }

@@ -297,13 +297,13 @@ h6, .h6 {
     color: #969895; }
 
 h1, .h1 {
-  font-size: 1.88889rem;
+  font-size: 1.33333rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 1rem; }
 
 h2, .h2 {
-  font-size: 1.66667rem;
+  font-size: 1.11111rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -332,11 +332,11 @@ h6, .h6 {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 48em) {
   h1, .h1 {
-    font-size: 2.77778rem; }
+    font-size: 1.88889rem; }
   h2, .h2 {
-    font-size: 2.22222rem; }
+    font-size: 1.66667rem; }
   h3, .h3 {
     font-size: 1.88889rem; }
   h4, .h4 {
@@ -348,9 +348,9 @@ h6, .h6 {
 
 @media screen and (min-width: 64em) {
   h1, .h1 {
-    font-size: 3.33333rem; }
+    font-size: 2.44444rem; }
   h2, .h2 {
-    font-size: 2.77778rem; }
+    font-size: 2.22222rem; }
   h3, .h3 {
     font-size: 1.66667rem; }
   h4, .h4 {
@@ -1080,7 +1080,7 @@ select {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  padding-top: 3.33333rem; }
+  padding-top: 1.66667rem; }
 
 .main-nav {
   -webkit-box-ordinal-group: 3;
@@ -1100,7 +1100,7 @@ select {
 
 @media print, screen and (min-width: 48em) {
   #main-menu {
-    display: block; } }
+    display: inline-block; } }
 
 .lang-nav {
   -webkit-box-ordinal-group: 2;
@@ -1108,9 +1108,50 @@ select {
           order: 1; }
 
 #lang-menu {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0; }
   #lang-menu li {
     display: inline; }
     #lang-menu li a {
       text-decoration: none;
       color: #3FA535; }
+
+.section {
+  padding: 0 1.66667rem; }
+
+.hero {
+  position: relative; }
+  .hero h1 {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    padding: 0 1.66667rem;
+    margin: 0; }
+    .hero h1 .large {
+      font-size: 2.22222rem; }
+
+.main h2 {
+  margin: 1.66667rem 0 0.41667rem;
+  text-transform: uppercase; }
+
+.main span {
+  margin-bottom: 1.66667rem;
+  display: block; }
+
+.main .has-2-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -10px; }
+  .main .has-2-columns .text-box {
+    background: #8AB8E0;
+    text-align: center;
+    padding: 0.83333rem 1.66667rem 1.66667rem;
+    margin-bottom: 10px; }
+    .main .has-2-columns .text-box h3 {
+      color: #ffffff;
+      margin-bottom: 1.66667rem; }
+    .main .has-2-columns .text-box p {
+      color: #27357C; }
