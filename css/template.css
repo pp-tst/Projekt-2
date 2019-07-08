@@ -257,7 +257,7 @@ td {
   padding: 0; }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: inherit;
   line-height: 1.6;
   text-rendering: optimizeLegibility; }
@@ -375,7 +375,7 @@ hr {
   clear: both;
   max-width: 106.66667rem;
   height: 0;
-  margin: 1.11111rem auto;
+  margin: 0.83333rem auto;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #969895;
@@ -384,7 +384,7 @@ hr {
 ul,
 ol,
 dl {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   list-style-position: outside;
   line-height: 1.6; }
 
@@ -409,7 +409,7 @@ dl {
     font-weight: bold; }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 0;
   padding: 0.5rem 1.11111rem 0 1.05556rem;
   border-left: 1px solid #969895; }
   blockquote, blockquote p {
@@ -1131,7 +1131,7 @@ select {
       font-size: 2.22222rem; }
 
 .main h2 {
-  margin: 1.66667rem 0 0.41667rem;
+  margin: 1.66667rem 0 0;
   text-transform: uppercase; }
 
 .main span {
@@ -1144,14 +1144,16 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: -10px; }
+  margin: 1.66667rem -10px -10px; }
   .main .has-2-columns .text-box {
     background: #8AB8E0;
     text-align: center;
     padding: 0.83333rem 1.66667rem 1.66667rem;
-    margin-bottom: 10px; }
+    margin: 10px; }
     .main .has-2-columns .text-box h3 {
       color: #ffffff;
       margin-bottom: 1.66667rem; }
     .main .has-2-columns .text-box p {
       color: #27357C; }
+  .main .has-2-columns .img-box {
+    margin: 0 10px; }
